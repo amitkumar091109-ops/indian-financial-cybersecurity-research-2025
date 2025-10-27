@@ -1,0 +1,52 @@
+{
+  "notion": {
+    "enabled": true,
+    "auto_log": true,
+    "database_id": null,
+    "parent_page_id": "2a240617-4276-476d-92f2-d9fcc823d40b",
+    "page_title_format": "Prompt & Output Log - {date}",
+    "create_daily_pages": true,
+    "export_format": "markdown"
+  },
+  "logging": {
+    "include_timestamps": true,
+    "include_session_ids": true,
+    "include_model_info": true,
+    "categorize_interactions": true,
+    "truncate_long_content": true,
+    "max_content_length": 1000
+  },
+  "categories": {
+    "research": {
+      "keywords": ["research", "quantum", "thesis", "analysis", "study", "investigate"],
+      "color": "blue",
+      "icon": "🔬"
+    },
+    "coding": {
+      "keywords": ["code", "python", "script", "function", "develop", "programming"],
+      "color": "green",
+      "icon": "💻"
+    },
+    "analysis": {
+      "keywords": ["analyze", "report", "data", "statistics", "metrics"],
+      "color": "orange",
+      "icon": "📊"
+    },
+    "cybersecurity": {
+      "keywords": ["security", "cyber", "threat", "vulnerability", "attack"],
+      "color": "red",
+      "icon": "🔒"
+    },
+    "general": {
+      "keywords": [],
+      "color": "gray",
+      "icon": "💬"
+    }
+  },
+  "automation": {
+    "log_after_every_response": true,
+    "auto_export_to_notion": false,
+    "daily_summary_time": "23:59",
+    "backup_to_file": true
+  }
+}
