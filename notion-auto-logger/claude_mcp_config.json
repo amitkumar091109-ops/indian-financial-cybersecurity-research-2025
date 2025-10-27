@@ -1,0 +1,72 @@
+{
+  "enabledPlugins": {
+    "example-skills@anthropic-agent-skills": true
+  },
+  "alwaysThinkingEnabled": true,
+  "projects": {
+    "/data/data/com.termux/files/home": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {
+        "parallel-task-mcp": {
+          "type": "http",
+          "url": "https://task-mcp.parallel.ai/mcp",
+          "headers": {
+            "x-api-key": "P2lHlgZqS2zyxkutGjpMv7I8-JOLPRBOb_2OJFEj"
+          }
+        },
+        "parallel-search-mcp": {
+          "type": "http",
+          "url": "https://search-mcp.parallel.ai/mcp",
+          "headers": {
+            "x-api-key": "P2lHlgZqS2zyxkutGjpMv7I8-JOLPRBOb_2OJFEj"
+          }
+        },
+        "perplexity": {
+          "type": "stdio",
+          "command": "npx",
+          "args": [
+            "-y",
+            "perplexity-mcp"
+          ],
+          "env": {
+            "PERPLEXITY_API_KEY": "pplx-**********************"
+          }
+        },
+        "filesystem": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "@modelcontextprotocol/server-filesystem"
+          ],
+          "env": {
+            "FILESYSTEM_ROOT": "/data/data/com.termux/files/home"
+          }
+        },
+        "notionApi": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "@notionhq/notion-mcp-server"
+          ],
+          "env": {
+            "NOTION_TOKEN": "ntn_**************************"
+          }
+        },
+        "context7": {
+          "type": "http",
+          "url": "https://mcp.context7.com/mcp",
+          "headers": {
+            "CONTEXT7_API_KEY": "ctx7sk-********************************-c0"
+          }
+        }
+      },
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "ignorePatterns": [],
+      "disabledMcpServers": [
+        "parallel-search-mcp"
+      ]
+    }
+  }
+}

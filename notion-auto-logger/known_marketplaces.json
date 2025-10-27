@@ -1,0 +1,10 @@
+{
+  "anthropic-agent-skills": {
+    "source": {
+      "source": "github",
+      "repo": "anthropics/skills"
+    },
+    "installLocation": "/data/data/com.termux/files/home/.claude/plugins/marketplaces/anthropic-agent-skills",
+    "lastUpdated": "2025-10-26T09:17:52.423Z"
+  }
+}
